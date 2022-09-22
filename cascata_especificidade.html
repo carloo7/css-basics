@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/cascata_especificidade.css">
+        <title>Cascata e especificidade</title>
+        <!-- o que prevalece é oq fica em ultimo (processamento de cima pra baixo) -->
+    <style>
+        /* o peso desse seletor é 100
+        #titulo {
+            color:blue;
+        }
+        o peso desse seletor é 10 
+        .descricao {
+            color:green;
+        }
+        o peso desse seletor é 1 
+        p {
+            color:red;
+        } */
+
+        main article {
+            background-color: beige;
+        }
+        main > article {
+            background-color: orange;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- main>article>p#titulo.descricao -->
+        <main>
+            <article>
+                <p id="titulo" class="descricao">
+                    Algoritmo de especificidade do CSS
+                </p>
+            </article>
+        </main>
+    </body>
+</html>

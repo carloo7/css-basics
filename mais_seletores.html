@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <title>Mais seletores</title>
+        <style>
+            article p {
+                padding: 12px;
+                background-color: lightgoldenrodyellow;
+            }
+
+            /* esse é um seletor CSS de filho direto */
+            article > p {
+                border: 1px solid black;
+            }
+            
+            /* , é "e" ou "ou" */
+            #principal p.promocao {
+                padding: 12px;
+                background-color: aliceblue;
+            }
+
+            p.coordenadores {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="principal">
+            <h1 id="titulo"> Portal de cursos</h1>
+
+            <p id="descricao">Possuimos cursos nas mais diversas áreas</p>
+
+            <p class="promocao nova">Venha conversar conosco e conhecer nossas ofertas de <strong>bolsas de estudos</strong></p>
+
+            <p>Cursos:</p>
+            <article>
+                <p class="novo-curso">Ciência da Computação</p>
+                <p class="novo-curso">Sistemas de informação</p>
+                <p class="curso">Farmácia</p>
+                <section>
+                    <!-- p.coordenadores{Coordenadores à disposição!} -->
+                    <p class="coordenadores">Coordenadores à disposição!</p>
+                </section>
+            </article>
+
+            <!-- p#.final-pagina*2 -->
+            <p id="contato" class="final-pagina">Entre em contato: 2915895</p>
+            <p id="rodape" class="final-pagina">Todos os direitos</p>
+        </main>
+    </body>
+</html>

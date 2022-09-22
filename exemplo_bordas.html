@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Bordas</title>
+    <style>
+        a {
+            border-width: thin;
+            border-color: royalblue;
+            border-style: solid;
+             /* isso tudo de cima = a isso tudo de baixo */
+            border:thin royalblue solid;
+
+            border-top: 3px dashed blue;
+            
+        }
+        .engenharia {
+            border: 5px solid green;
+            /* border-top-left-radius: 10px; */
+            /* a partir do topo esquerdo sentido horário */
+            border-radius: 20px 50px 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- main>div#cursos>p.*2+a{Mais informações} -->
+    <main>
+        <div id="cursos">
+            <p class="engenharia">Engenharia</p>
+            <p class="farmacia">Farmácia</p>
+            <a href="#">Mais informações</a>
+        </div>
+    </main>
+</body>
+</html>
