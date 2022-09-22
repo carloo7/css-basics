@@ -1,0 +1,58 @@
+/*h1 {color:blueviolet;}
+h1 é um seletor CSS
+color: green é uma regra CSS
+p {color:darkseagreen;}
+p é um seletor CSS
+color: darkseagreen é uma regra CSS*/
+
+/*esse é um seletor por id*/
+#titulo {
+    color:rgb(12, 8, 243);
+    text-align: center;
+}
+/*esse é um seletor por tipo e id*/
+p#descricao {
+    color:rgb(40, 228, 118)
+}
+
+/*esse é um seletor por classe*/
+/*.promocao {
+    text-align: center;
+    background-color: lightblue;
+} */
+
+/* esse é um seletor por tipo e classe*/
+p.promocao {
+    text-align: center;
+    background-color: lightblue;
+
+}
+
+.nova {
+    color:white
+}
+
+/*todo p que tenha a classe final-pagina e cujo id seja rodape*/
+p.final-pagina#rodape{
+    background-color: lightgray;
+    text-align: center;
+}
+
+.curso, .novo-curso, #contato {
+    background-color: aliceblue;
+    padding: 12px;
+    border:1px solid lightgrey;  
+}
+
+.novo-curso {
+    color:red;
+}
+/*
+.curso {
+    background-color: aliceblue;
+}
+
+.novo-curso {
+    background-color: aliceblue;
+    color:red
+} */
